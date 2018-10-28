@@ -22,12 +22,12 @@ client.on('guildMemberRemove', Sal => { //By Salto7#4595
   .addField(' 👤 الان ',`**[ ${Sal.guild.memberCount} ]**`,true)
   .setColor('RED')
   .setFooter(Sal.guild.name, Sal.guild.iconURL, true)
-  var channel =Sal.guild.channels.find('name', ':sob:By:sob:') // هنا حط اسم الروم الي تبيه يكتب فيه
+  var channel =Sal.guild.channels.find('name', '💀by💀by💀') // هنا حط اسم الروم الي تبيه يكتب فيه
   if (!channel) return;
   channel.send({embed : embed});
   });
     client.on("guildMemberAdd", function(member) {
-  const channel = member.guild.channels.find("name", ":two_hearts:Welcom To Server:two_hearts:")
+  const channel = member.guild.channels.find("name", "💕welcome💕")
       const embed = new Discord.RichEmbed()
       .setColor('RANDOM')
       .setAuthor(member.user.tag, member.user.avatarURL)
